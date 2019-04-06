@@ -4,7 +4,7 @@ resource "null_resource" "PowerShellScriptRunOnTrigger" {
     }
 
     provisioner "local-exec" {
-        command = ".'${path.module}\\helpers\\Start-TriggerAction.ps1' -TriggerValue ${var.TriggerValue}"
+        command = ".'${path.module}\\helpers\\Get-Processes.ps1' -First 10"
         interpreter = ["PowerShell", "-Command"]
     }
 }
