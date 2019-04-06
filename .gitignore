@@ -2,3 +2,4 @@
 test.ps1
 tfplan
 *.tfstate
+*.tfstate.backup
